@@ -1,1 +1,4 @@
-<?php include_once(“home.html”); ?>
+<?php
+$text= file_get_contents('home.html');
+echo $text;
+?>
