@@ -63,6 +63,7 @@
     measurementId: "G-RCVK6QZE80"
 
   };
+  
 
 
   // Initialize Firebase
@@ -72,6 +73,8 @@
   const analytics = getAnalytics(app);
 
 </script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 </body>
 </html>
 
