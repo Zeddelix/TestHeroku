@@ -1,34 +1,36 @@
-
-<html>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Ma première page avec du style</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Firebase Cloud Firestore Tutorial - Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+  <main>
+    <form>
+        <label for="userId">User ID</label><br>
+        <input type="text" name="userId" id="userId"><br>
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName"><br>
+        <label for="lastName">Last Name</label><br>
+        <input type="text" name="lastName" id="lastName"><br>  
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age"><br>
+        <button id="addBtn" class="btn waves-effect waves-light">Add</button>
+        <button id="updateBtn" class="btn waves-effect waves-light">Update</button>
+        <button id="readBtn" class="btn waves-effect waves-light">Read</button>
+        <button id="removeBtn" class="btn waves-effect red darken-1">Remove</button>
+    </form>
+  </main>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<!-- Menu de navigation du site -->
-<ul class="navbar">
-  <li><a href="index.html">Home page</a>
-  <li><a href="reflexions.html">Réflexions</a>
-  <li><a href="ville.html">Ma ville</a>
-  <li><a href="liens.html">Liens</a>
-</ul>
-
-<!-- Contenu principal -->
-<h1>Ma première page avec du style</h1>
-
-<p>Bienvenue sur ma page avec du style! 
-
-<p>Il lui manque des images, mais au moins, elle a du style. Et elle a desliens, même s'ils ne mènent nulle part...
-&hellip;
-
-<p>Je devrais étayer, mais je ne sais comment encore.
-
-<!-- Signer et dater la page, c'est une question de politesse! -->
-<address>Fait le 5 avril 2004<br>
-  par moi.</address>
 <script type="module">
 
   // Import the functions you need from the SDKs you need
@@ -63,7 +65,6 @@
     measurementId: "G-RCVK6QZE80"
 
   };
-  
 
 
   // Initialize Firebase
@@ -73,9 +74,6 @@
   const analytics = getAnalytics(app);
 
 </script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="./functions.js"></script>
 </body>
-</html>
-
 </html>
